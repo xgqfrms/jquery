@@ -3,16 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<!-- not necessary -->
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
 	<title>jquuery UI</title>
+	<style>
+	#.data{
+		/*background-color: #00fff00;*/
+	}
+	</style>
 </head>
 <body>
-	<div class="c1"></div>
-	<div class="c2"></div>
-	<div class="c3"></div>
+	<div class="c1">
+		<input type="text" name="date" id="date" />
+	</div>
+	<div class="c2">
+		<input type="range" name="myrange" id="myrange" />
+	</div>
+	<div class="c3" id="mySliderDiv">
+		<!-- x -->
+	</div>
 	<div class="scripts">
-		<script src="jquery/"></script>
-		<script src="jquery/"></script>
-		<script src="jquery/"></script>
+	<!-- conditional comments: -->
+    <!--[if lt IE 9]>
+        <script src="jquery/jquery-1.12.3.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+        <script src="jquery/jquery-2.2.3.min.js"></script>
+    <!--[endif]-->
+
+		<script src="jquery/jquery-1.12.3.min.js"></script>
+		<!-- newer version -->
+		<script src="jquery/jquery-2.2.3.min.js"></script>
+		<script src="jquery/jquery-ui.min.js"></script>
+		<script>
+			$( "#date" ).datepicker();
+			$( "#mySliderDiv" ).slider({
+			    orientation: "vertical",
+			    min: 0,
+			    max: 150,
+			    value: 50
+			});
+		</script>
 	</div>
 </body>
 </html>
