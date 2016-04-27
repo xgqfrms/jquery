@@ -1,0 +1,9 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.col-bg{
+	background-color: #cbacba;
+	border: 1px solid red;
+	margin: 10px  auto;
+}
