@@ -12,14 +12,40 @@
         height: 500px;
     }
     .carousel .item {
-        height: 500px;
-        
+        height: 500px; 
     }
     .carousel .item img {
         width: 100%;
     }
     .carousel-caption{
         color:#0f0;
+        font-size: 2em;
+    }
+    .carousel-indicators li {
+    	background-color: #f00;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        /*background-color: #000\9;*/
+        /*
+        http://stackoverflow.com/questions/13571855/background-image-rgba-with-fallback-in-ie-7-8
+
+        To write CSS rules specificially to IE8 or below, add a backslash and 9 (\9) at the end before the semicolon.
+        example: background-color:#000\9;
+        */
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #acf;
+        border-radius: 10px;
+    }
+    .carousel-indicators .active {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        background-color: #0f0;
+        /*visibility: hidden;*/ 
     }
 </style>
 
@@ -72,19 +98,62 @@ id="carousel-id"
 	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 	    <span class="sr-only">Next</span>
 	  </a>
+
+	  <!-- 控制按钮 -->
+	     <div style="text-align:center;">
+	        <input type="button" class="btn start-slide" value="Start">
+	        <input type="button" class="btn pause-slide" value="Pause">
+	        <input type="button" class="btn prev-slide" value="Previous Slide">
+	        <input type="button" class="btn next-slide" value="Next Slide">
+	        <input type="button" class="btn slide-one" value="Slide 1">
+	        <input type="button" class="btn slide-two" value="Slide 2">            
+	        <input type="button" class="btn slide-three" value="Slide 3">
+	     </div>
 	</div>
 	<!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../jquery_lib/jquery-1.12.3.min.js"></script>
     <script src="../bootstrap_lib/dist/js/bootstrap.min.js"></script>
-<!--     <script>
-	    $(function(){
-	        // 初始化轮播
-	      $(".start-slide").click(function(){
-	         $("#myCarousel").carousel('cycle');
-	      });
-	    });
-	</script> -->
+    <script>
+       $(function(){
+          // 初始化轮播
+          $(".start-slide").click(function(){
+             $("#carousel-id").carousel('cycle');
+          });
+          // 停止轮播
+          $(".pause-slide").click(function(){
+             $("#carousel-id").carousel('pause');
+          });
+          // 循环轮播到上一个项目
+          $(".prev-slide").click(function(){
+             $("#carousel-id").carousel('prev');
+          });
+          // 循环轮播到下一个项目
+          $(".next-slide").click(function(){
+             $("#carousel-id").carousel('next');
+          });
+          // 循环轮播到某个特定的帧 
+          $(".slide-one").click(function(){
+             $("#carousel-id").carousel(0);
+          });
+          $(".slide-two").click(function(){
+             $("#carousel-id").carousel(1);
+          });
+          $(".slide-three").click(function(){
+             $("#carousel-id").carousel(2);
+          });
+
+          $('#carousel-id').on('slide.bs.carousel', function () {
+            // 执行一些动作...
+            alert("当调用 slide 实例方法时立即触发该事件。");
+          })
+          $('#carousel-id').on('slid.bs.carousel', function () {
+            // 执行一些动作...
+            alert("当调用 slid 实例方法时立即触发该事件。");
+          })
+
+       });
+    </script>
 
 </body>
 </html>
