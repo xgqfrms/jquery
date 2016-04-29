@@ -8,10 +8,10 @@
 <link rel="stylesheet" href="../css/normalize.css"/>
 <link rel="stylesheet" href="../bootstrap_lib/dist/css/bootstrap.min.css"/>
 <!-- 
-其实Bootstrap的全局样式采用了“normalize.css”，
-但并没有一味的全部使用此重置样式，
-而是在此基础上进行了一些改良，
-让其更适合Bootstrap的设计思想。 
+	其实Bootstrap的全局样式采用了“normalize.css”，
+	但并没有一味的全部使用此重置样式，
+	而是在此基础上进行了一些改良，
+	让其更适合Bootstrap的设计思想。 
 -->
 <title>Carousel < &lsaquo; &rsaquo; > </title>
 <style>
@@ -149,15 +149,15 @@ id="carousel-id"
           $(".slide-three").click(function(){
              $("#carousel-id").carousel(2);
           });
-
-          $('#carousel-id').on('slide.bs.carousel', function () {
-            // 执行一些动作...
-            alert("当调用 slide 实例方法时立即触发该事件。");
-          })
-          $('#carousel-id').on('slid.bs.carousel', function () {
-            // 执行一些动作...
-            alert("当调用 slid 实例方法时立即触发该事件。");
-          })
+          // test js
+          // $('#carousel-id').on('slide.bs.carousel', function () {
+          //   // 执行一些动作...
+          //   alert("当调用 slide 实例方法时立即触发该事件。");
+          // })
+          // $('#carousel-id').on('slid.bs.carousel', function () {
+          //   // 执行一些动作...
+          //   alert("当调用 slid 实例方法时立即触发该事件。");
+          // })
 
        });
     </script>
