@@ -113,8 +113,19 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-bg">
-				<h1>h1</h1>
-				<div></div>
+				<h1>KBD && SAMP</h1>
+				<!-- https://www.w3.org/TR/html5/text-level-semantics.html#the-kbd-element -->
+				<div>
+					<p>To make George eat an apple, press <kbd>Shift</kbd>+<kbd>F3</kbd></p>
+					<p>To make George eat an apple, press <kbd>Shift+F3</kbd></p>
+					<p>To make George eat an apple, press <kbd><kbd>Shift</kbd>+<kbd>F3</kbd></kbd></p>
+					<p>To make George eat an apple, press <samp>Shift</samp>+<samp>F3</samp></p>
+					<!-- samp -->
+					<p>To make George eat an apple, select
+					    <kbd><kbd><samp>File</samp></kbd>|<kbd><samp>Eat Apple...</samp></kbd></kbd>
+					</p>
+					<p>To make George eat an apple, select <kbd>File | Eat Apple...</kbd></p>
+				</div>
 			</div>
 			<div class="col-md-4 col-bg">
 				<h1>h1</h1>
