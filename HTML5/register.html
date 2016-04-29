@@ -5,12 +5,302 @@
 	<title>Document</title>
 
 	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html, body {
+	    font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+	    color: #14191e;
+	}
+	#header{
+		background: #000000;
+	}
+	#logo {
+	    margin: 0 20px;
+	}
+	.logo {
+	    float: left;
+	}
+	#logo a, .logo a {
+	    display: block;
+	    height: 60px;
+	    width: 140px;
+	    background: url(../images/imooc-logo.png) no-repeat center center;
+	    text-indent: 100%;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+	.hide-text {
+	    text-indent: 100%;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+	.hide-text {
+	    text-indent: 100%;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+	:link, :visited, ins {
+	    text-decoration: none;
+	}
+	a, input, button {
+	    outline: none;
+	}
+	a {
+	    outline: none;
+	}
+	a:hover, a:active {
+	    color: #ec1500;
+	}
+	a:link, a:visited {
+	    color: #14191e;
+	}
+	a:hover {
+	    color: #c9394a;
+	}
+	a:link, a:visited {
+	    color: #5e5e5e;
+	}
+	.visible-xs-block {
+	    display: none;
+	}
+	a, input, button {
+	    outline: none;
+	}
+	input, button, textarea, select {
+	    border: 0;
+	}
+	ol, ul {
+	    list-style: none;
+	}
+	ul, menu, dir {
+	    display: block;
+	    list-style-type: disc;
+	    -webkit-margin-before: 1em;
+	    -webkit-margin-after: 1em;
+	    -webkit-margin-start: 0px;
+	    -webkit-margin-end: 0px;
+	    -webkit-padding-start: 40px;
+	}
+	.nav-item li {
+	    float: left;
+	}
+	.visible-xs-block {
+	    display: none;
+	}
+	.nav-item a {
+	    position: relative;
+	    padding: 0 25px;
+	    display: block;
+	    color: #ffffff;
+	    text-align: center;
+	    font-size: 14px;
+	    height: 60px;
+	    line-height: 60px;
+	    -webkit-transition: background-color 0.3s;
+	    -moz-transition: background-color 0.3s;
+	    transition: background-color 0.3s;
+	}
+	#login-area {
+	    float: right;
+	    position: relative;
+	}
+	.clearfix:after {
+	    content: '\0020';
+	    display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+	}
+	.clearfix:after {
+	    content: '\0020';
+	    display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+	}
+	.search-warp .showhide-search {
+	    width: 30px;
+	    height: 60px;
+	    line-height: 60px;
+	    text-align: right;
+	    position: absolute;
+	    display: inline-block;
+	    right: 0;
+	    top: 0;
+	}
+	[class^="icon-"], [class*=" icon-"] {
+	    font-family: 'icomoon' !important;
+	    speak: none;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-variant: normal;
+	    text-transform: none;
+	    line-height: 1;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	}
+	.icon-search:before {
+	    content: "\e610";
+	}
+	.search-area .search-area-result {
+	    position: absolute;
+	    left: 0px;
+	    top: 41px;
+	    width: 238px;
+	    margin-bottom: 20px;
+	    border: 1px solid #d3d3d3;
+	    border-top: none;
+	    background-color: #fff;
+	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+	    font-size: 12px;
+	    overflow: hidden;
+	    display: none;
+	    z-index: 1000;
+	}
+	.search-area .btn_search {
+	    float: left;
+	    cursor: pointer;
+	    width: 30px;
+	    height: 38px;
+	    text-align: center;
+	    -webkit-transition: background-color 0.3s;
+	    -moz-transition: background-color 0.3s;
+	    transition: background-color 0.3s;
+	}
+	.search-area .search-input {
+	    padding: 5px 10px;
+	    width: 100%;
+	    height: 38px;
+	    line-height: 38px;
+	    font-size: 12px;
+	    float: left;
+	    border: 0;
+	    color: #fff;
+	    -webkit-transition: background-color 0.3s;
+	    -moz-transition: background-color 0.3s;
+	    transition: background-color 0.3s;
+	    background-color: #000000;
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+	.search-area {
+	    float: right;
+	    position: relative;
+	    height: 38px;
+	    width: 210px;
+	    margin: 10px 0;
+	    padding-right: 30px;
+	    border: 1px solid #000;
+	    border-bottom-color: rgba(120, 125, 130, 0.8);
+	    zoom: 1;
+	    -webkit-transition: width 0.3s;
+	    -moz-transition: width 0.3s;
+	    transition: width 0.3s;
+	}
+	input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+	    align-items: flex-start;
+	    text-align: center;
+	    cursor: default;
+	    color: buttontext;
+	    border-image-source: initial;
+	    border-image-slice: initial;
+	    border-image-width: initial;
+	    border-image-outset: initial;
+	    border-image-repeat: initial;
+	    background-color: buttonface;
+	    box-sizing: border-box;
+	    padding: 2px 6px 3px;
+	    border-width: 2px;
+	    border-style: outset;
+	    border-color: buttonface;
+	}
+	user agent stylesheet
+	input, textarea, keygen, select, button {
+	    text-rendering: auto;
+	    color: initial;
+	    letter-spacing: normal;
+	    word-spacing: normal;
+	    text-transform: none;
+	    text-indent: 0px;
+	    text-shadow: none;
+	    display: inline-block;
+	    text-align: start;
+	    margin: 0em 0em 0em 0em;
+	    font: 13.3333px Arial;
+	}
 	input{
 		background: url(../images/user_icon.jpg) right center no-repeat;
 	}
 	</style>
 </head>
 <body>
+    <div class="container">
+    	<div id="header">
+    	    <div class="page-container" id="nav">
+    	        <div id="logo" class="logo"><a href="/" target="_self" class="hide-text">慕课网</a></div>
+
+
+    	        <button type="button" class="navbar-toggle visible-xs-block js-show-menu">
+    	            <i class="icon-menu"></i>
+    	        </button>
+    	        <ul class="nav-item">
+    	                                <li class="set-btn visible-xs-block"><a href="/user/newlogin" target="_self">登录</a> / <a href="/user/newsignup" target="_self">注册</a></li>
+    	                                <li>
+    	                    <a href="/course/list" target="_self">课程</a>
+    	                </li>
+    	                <li>
+    	                    <a href="http://coding.imooc.com" target="_self">实战<i class="icn-new"></i></a>
+    	                </li>
+    	                <li><a href="/course/program" target="_self">计划</a></li>
+    	                <li><a href="/wenda" target="_self">猿问</a></li>
+    	                <li><a href="/article" target="_self">手记</a></li>
+    	                
+    	        </ul>
+
+    	                <div id="login-area">
+    	            <ul class="header-unlogin clearfix">
+    	                <li class="header-app">
+    	                    <a href="/mobile/app">
+    	                        <span class="icon-appdownload"></span>
+    	                    </a>
+    	                    <div class="QR-download">
+    	                        <p id="app-text">慕课网APP下载</p>
+    	                        <p id="app-type">iPhone / Android / iPad</p>
+    	                        <img src="/static/img/index/QR-code.jpg">
+    	                    </div>
+    	                </li>
+    	                <li class="header-signin">
+    	                    <a href="#" id="js-signin-btn">登录</a>
+    	                </li>
+    	                <li class="header-signup">
+    	                    <a href="#" id="js-signup-btn">注册</a>
+    	                </li>
+    	            </ul>
+    	        </div>
+    	                <!--
+    	        <div class="app-down-area r">
+    	            <a href="/mobile/app">
+    	                <i class="header-app-icon"></i>慕课APP
+    	            </a>
+    	        </div>
+    	        -->
+    	        
+    	        
+    	        <div class="search-warp clearfix" style="min-width: 32px; height: 60px;">
+    	            <div class="search-area min" data-search="top-banner" style="display: none;">
+    	                <input class="search-input" data-suggest-trigger="suggest-trigger" placeholder="请输入想搜索的内容..." type="text" autocomplete="off">
+    	                <input type="hidden" class="btn_search" data-search-btn="search-btn">
+    	                <ul class="search-area-result" data-suggest-result="suggest-result" style=""></ul>
+    	            </div>
+    	            <div class="showhide-search" data-show="no"><i class="icon-search"></i></div>
+    	        </div>
+    	    </div>
+    	</div>
+    </div>
 	<div class="container">
 		<form action="register.php">
 			<label for="">username</label>
