@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");*/
+	@import url("../css/css.css?family=Raleway:400,700");
+	.person-card {
+	  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  position: relative;
+	  height: 300px;
+	  width: 320px;
+	  overflow: hidden;
+	  border: 1px solid #2780E3;
+	}
+	.person-card .person-img {
+	  width: 100%;
+	  height: auto;
+	}
+	.person-card .person-info {
+	  position: absolute;
+	  top: 236px;
+	  height: 300px;
+	  width: 100%;
+	  color: #fff;
+	  background-color: #2780E3;
+	  opacity: 0.9;
+	  -ms-transition: -ms-transform 0.75s;
+	  -webkit-transition: -webkit-transform 0.75s;
+	  transition: transform 0.75s;
+	}
+	.person-card .person-info:hover {
+	  -ms-transform: translateY(-236px);
+	  -webkit-transform: translateY(-236px);
+	  transform: translateY(-236px);
+	}
+	.person-card .person-info .details-title {
+	  height: 44px;
+	  font-size: 20px;
+	  padding: 10px;
+	}
+	.person-card .person-info .details-title small {
+	  font-size: 70%;
+	  color: #f7f7f7;
+	}
+	.person-card .person-info .details-body {
+	  padding: 10px;
+	  text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<div class="person-card">
+	  <img class="person-img" src="../images/bill-gates.jpg" alt="Bill Gates" />
+	  <div class="person-info">
+	    <div class="details-title">
+	      <span>Bill Gates</span><br/>
+	      <small>Chief Executive Officer, Co-Founder</small>
+	    </div>
+	    <div class="details-body">
+	      William Henry "Bill" Gates III is an American business magnate, philanthropist, investor, computer programmer, and inventor. In 1975, Gates co-founded Microsoft, that became the world's largest PC software company, with Paul Allen.
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>
+<!-- 
+LESS css
+
+@card-height: 300px;
+@card-width: 320px;
+@title-height: 64px;
+@transition-time: 0.75s;
+@card-color: #2780E3;
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+.person-card {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  height: @card-height;
+  width: @card-width;
+  overflow: hidden;
+  border: 1px solid @card-color;
+  .person-img {
+    width: 100%;
+    height: auto;
+  }
+  .person-info {
+    position: absolute;
+    top: @card-height - @title-height;
+    height: @card-height;
+    width: 100%;
+    color: #fff;
+    background-color: @card-color;
+    opacity: 0.9;
+    -ms-transition: -ms-transform @transition-time;
+    -webkit-transition: -webkit-transform @transition-time;
+    transition: transform @transition-time;
+    &:hover {
+      -ms-transform: translateY(-(@card-height - @title-height));
+      -webkit-transform: translateY(-(@card-height - @title-height));
+       transform: translateY(-(@card-height - @title-height));
+    }
+    .details-title {
+      height: @title-height - 20px;
+      font-size: 20px;
+      padding: 10px;
+      small {
+        font-size: 70%;
+        color: #f7f7f7;
+      }
+    }
+    .details-body {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}
+
+
+ -->
