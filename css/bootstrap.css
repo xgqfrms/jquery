@@ -1,5 +1,7 @@
 /*css for bootstrap testing!*/
-
+body{
+	background: url(../images/bg.png) no-repeat;
+}
 .col-bg{
 	background-color: #abc;
 	border: 1px solid #f00;
