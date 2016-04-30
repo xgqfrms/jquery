@@ -1,6 +1,7 @@
 /*css for bootstrap testing!*/
 body{
-	background: url(../images/bg.png) no-repeat;
+	background: url(../images/favicon.png);
+	/*background: url(../images/favicon.png) no-repeat;*/
 }
 .col-bg{
 	background-color: #abc;
