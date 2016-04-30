@@ -12,3 +12,8 @@ body{
 	width: 100%;
 	height: 100%;
 }
+.color_azure{
+	color:#F0FFFF;
+	background-color: #fff;
+	/* 天蓝色 azure　：#F0FFFF*/
+}
