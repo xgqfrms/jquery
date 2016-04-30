@@ -14,6 +14,14 @@ body{
 }
 .color_azure{
 	color:#F0FFFF;
-	background-color: #fff;
+	/*background-color: #fff;*/
+	/*background-color: #000;*/
+	background-color: #0f0;
+	/* 天蓝色 azure　：#F0FFFF*/
+}
+.color_azurex{
+	/*color: azure;*/
+	color: red;
+	background-color: #0f0;
 	/* 天蓝色 azure　：#F0FFFF*/
 }
