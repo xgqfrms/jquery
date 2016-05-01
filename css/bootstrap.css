@@ -46,6 +46,9 @@ body{
 	line-height: 100px;
 	float: left;
 }
+.my_header .logo_1 img{
+    visibility: hidden;
+ }
 
 .my_footer{
 	background-color: #000;
@@ -69,11 +72,14 @@ body{
     float: none;
  }
  .my_header .logo_1{
- 	background: url(../images/logo/logo-me.png);
+ 	/*background: url(../images/logo/logo-me.png);*/
  	width: 30%;
- 	height: 30%;
+ 	height: 100%;
  	line-height: 50px;
  	float: left;
+ }
+ .my_header .logo_1 img{
+    visibility: visible;
  }
 }
 
