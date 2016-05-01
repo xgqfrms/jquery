@@ -27,6 +27,7 @@ body{
 	/* 天蓝色 azure　：#F0FFFF*/
 }
 .my_header{
+	background: url(../images/favicon.ico);
 	background-color: #000;
 	border: 1px solid #0f0;
 	width: 100%;
@@ -40,14 +41,16 @@ body{
     float: none;
 }
 .my_header .logo_1{
-	/*background: url(../images/logo/logo-me.png);*/
+	/*
+	无法自动调整img的大小| 可以防止鼠标直接选择复制图片
+	background: url(../images/logo/logo-me.png);
+	*/
 	width: 300px;
 	height: 100px;
 	line-height: 100px;
 	float: left;
 }
-.my_header .logo_1 img{
-    visibility: visible;
+.logo_img{
     width: 100%;
  	height: 100%;
  }
@@ -60,6 +63,7 @@ body{
     float: none;
     overflow: hidden;
 }
+
 .my_footer .icons>li{
 	float: left;
 }
@@ -74,16 +78,14 @@ body{
     float: none;
  }
  .my_header .logo_1{
- 	/*background: url(../images/logo/logo-me.png);*/
  	width: 50%;
- 	height: 100%;
- 	line-height: 50px;
+ 	height: 50%;
+ 	line-height: 50%;
  	float: left;
  }
- .my_header .logo_1 img{
-    visibility: visible;
-    width: 100%;
- 	height: 100%;
+ .logo_img{
+    width: 150px;
+ 	height: 50px;
  }
 }
 
