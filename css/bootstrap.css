@@ -70,8 +70,8 @@ body{
  }
  .my_header .logo_1{
  	background: url(../images/logo/logo-me.png);
- 	width: 30%px;
- 	height: 30%x;
+ 	width: 30%;
+ 	height: 30%;
  	line-height: 50px;
  	float: left;
  }
