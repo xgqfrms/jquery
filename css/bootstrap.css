@@ -27,7 +27,6 @@ body{
 	/* 天蓝色 azure　：#F0FFFF*/
 }
 .my_header{
-	/*background: url(../images/logo/logo-me.png);*/
 	background-color: #000;
 	border: 1px solid #0f0;
 	width: 100%;
@@ -63,7 +62,6 @@ body{
 /* CSS3 Media Query: */
 @media (max-width: 600px) {
  .my_header{
- 	/*background: url(../images/logo/logo-me.png);*/
  	background-color: #000;
  	border: 1px solid #0f0;
  	width: 100%;
