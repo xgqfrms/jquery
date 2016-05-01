@@ -19,17 +19,18 @@
  }
 }*/
 
- .my_header{
- 	background-color: #000;
- 	border: 1px solid #0f0;
- 	width: 100%;
- 	height: 50px;
-    float: none;
- }
- .my_header .logo_1{
- 	background: url(../images/logo/logo-me.png);
- 	width: 30%px;
- 	height: 30%x;
- 	line-height: 50px;
- 	float: left;
- }
+/*.my_header{
+	background-color: #000;
+	border: 1px solid #0f0;
+	width: 100%;
+	height: 50px;
+float: none;
+}
+.my_header .logo_1{
+	background: url(../images/logo/logo-me.png);
+	width: 30%px;
+	height: 30%x;
+	line-height: 50px;
+	float: left;
+}
+*/
