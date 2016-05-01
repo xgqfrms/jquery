@@ -46,6 +46,19 @@ body{
 	line-height: 100px;
 	float: left;
 }
+
+.my_footer{
+	background-color: #000;
+	border: 1px solid #0f0;
+	width: 100%;
+	height: 100px;
+    float: none;
+    overflow: hidden;
+}
+.my_footer .icons>li{
+	float: left;
+}
+
 /* CSS3 Media Query: */
 @media (max-width: 600px) {
  .my_header{
@@ -70,14 +83,20 @@ body{
 	http://www.cnblogs.com/xgqfrms/p/5450245.html
 */
 
-.my_footer{
-	background-color: #000;
-	border: 1px solid #0f0;
-	width: 100%;
-	height: 100px;
-    float: none;
-    overflow: hidden;
-}
-.my_footer .icons>li{
-	float: left;
-}
+/*
+	<!--
+	    CSS3 Media Query:
+
+	    1:link元素中的CSS媒体查询
+	    <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+
+	    2:样式表中的CSS媒体查询
+	    <style>
+	    @media (max-width: 600px) {
+	     .facet_sidebar {
+	        display: none;
+	       }
+	    }
+	    </style>
+    -->
+*/
