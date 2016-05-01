@@ -64,10 +64,12 @@ body{
  	float: left;
  }
 }
+
 /*
 	CSS3 弹性盒子(Flex Box)
 	http://www.cnblogs.com/xgqfrms/p/5450245.html
 */
+
 .my_footer{
 	background-color: #000;
 	border: 1px solid #0f0;
