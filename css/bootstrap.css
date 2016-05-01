@@ -31,6 +31,12 @@ body{
 	border: 1px solid #0f0;
 	width: 100%;
 	height: 100px;
+	/*
+	自动居中：
+	height: 100px;
+    line-height: 100px;
+    margin: 3px auto;
+	*/
     float: none;
 }
 .my_header .logo_1{
@@ -39,6 +45,24 @@ body{
 	height: 100px;
 	line-height: 100px;
 	float: left;
+}
+/* CSS3 Media Query: */
+@media (max-width: 600px) {
+ .my_header{
+ 	/*background: url(../images/logo/logo-me.png);*/
+ 	background-color: #000;
+ 	border: 1px solid #0f0;
+ 	width: 100%;
+ 	height: 50px;
+    float: none;
+ }
+ .my_header .logo_1{
+ 	background: url(../images/logo/logo-me.png);
+ 	width: 30%px;
+ 	height: 30%x;
+ 	line-height: 50px;
+ 	float: left;
+ }
 }
 
 .my_footer{
