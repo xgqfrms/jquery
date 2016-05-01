@@ -2,7 +2,7 @@
 body{
 	/*background: url(../images/favicon.png);*/
 	/*background: url(../images/favicon.png) no-repeat;*/
-	background-color: #000;
+	background-color: #fff;
 }
 .col-bg{
 	background-color: #abc;
@@ -24,4 +24,31 @@ body{
 	color: red;
 	background-color: #0f0;
 	/* 天蓝色 azure　：#F0FFFF*/
+}
+.my_header{
+	/*background: url(../images/logo/logo-me.png);*/
+	background-color: #000;
+	border: 1px solid #0f0;
+	width: 100%;
+	height: 100px;
+    float: none;
+}
+.my_header .logo_1{
+	background: url(../images/logo/logo-me.png);
+	width: 300px;
+	height: 100px;
+	line-height: 100px;
+	float: left;
+}
+
+.my_footer{
+	background-color: #000;
+	border: 1px solid #0f0;
+	width: 100%;
+	height: 100px;
+    float: none;
+    overflow: hidden;
+}
+.my_footer .icons>li{
+	float: left;
 }
