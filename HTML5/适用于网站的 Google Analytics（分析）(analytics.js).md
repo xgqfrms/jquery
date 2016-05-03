@@ -1,6 +1,6 @@
 适用于网站的 Google Analytics（分析）(analytics.js)
 
-将 analytics.js 添加到网站中
+# 将 analytics.js 添加到网站中
 
 Analytics.js 库是一种可用于衡量用户与您网站的互动情况的 JavaScript 库。本文介绍如何将 analytics.js 添加到您的网站。
 
