@@ -10,30 +10,40 @@
 	</div>
 	<div class="login_container">
 		<div class="login_form">
-			<form action="login.php" class="login_form" id="form_login" name="form_l">
+			<form action="login.php" class="login_form" id="form_login" name="form_name">
 			    <h1>注册</h1>
 			    <hr/>
+			    <label for="">user name</label>
+			    <input type="text" placeholder="user_name" name="user_name">
+			    <input type="hidden" name="ajax_user_name" value="user name error!"><br>
 				<label for="">email</label>
-				<input type="text" placeholder="input email" name="email"><br>
+				<input type="email" placeholder="input email" name="email">
+				<input type="hidden" name="ajax_user_name" value="user name error!"><br>
 				<label for="">password</label>
-				<input type="password" placeholder="input password" name="pwd"><br>
+				<input type="password" placeholder="input password" name="pwd">
+				<input type="hidden" name="ajax_user_name" value="user name error!"><br>
 				<label for="">confirm</label>
-				<input type="password" placeholder="confirm password" name="pwd_check"><br>
+				<input type="password" placeholder="confirm password" name="pwd_check">
+				<input type="hidden" name="ajax_user_name" value="user name error!"><br>
 				<label for="">captcha</label>
 				<input type="text" placeholder="captcha" name="captcha">
-				<img src="../images/x.png" alt="captcha"><br>
+				<img src="../images/x.png" alt="captcha">
+				<input type="hidden" name="ajax_user_name" value="user name error!"><br>
 				<label for="">agree</label>
 				<input type="checkbox" placeholder="using_protocol" name="protocol" checked="checked">
 				<a href="../pages/protocol.html">user protocol</a>
+				<input type="hidden" name="ajax_user_name" value="user name error!">
 				<hr>
-				<label for="">submit</label>	
+				<label for=""></label>	
 				<input type="submit" placeholder="submit" name="submit" value="submit">
-				<label for="">reset</label>
-				<input type="reset" placeholder="reset" name="reset" value="reset"><br>	
+				<label for=""></label>
+				<input type="reset" placeholder="reset" name="reset" value="reset">
+				<label for="">button test</label>
+				<input type="button" name="button" value="Click Button" onclick=""><br>
 				<hr>
 			</form>
-			<!-- <button onclick="" name="" form="form_l">submit</button>
-			<button onclick="" name="" form="form_l">reset</button> -->
+			<!-- <button onclick="" name="" form="form_id">submit</button>
+			<button onclick="" name="" form="form_id">reset</button> -->
 		</div>
 	</div>
 	<div class="login_footer">
