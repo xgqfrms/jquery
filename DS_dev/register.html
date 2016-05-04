@@ -5,6 +5,39 @@
 	<title>register page</title>
 </head>
 <body>
-	
+	<div class="login_header">
+		<div class="logo">icon</div>
+	</div>
+	<div class="login_container">
+		<div class="login_form">
+			<form action="login.php" class="login_form" id="form_login" name="form_l">
+			    <h1>注册</h1>
+			    <hr/>
+				<label for="">email</label>
+				<input type="text" placeholder="input email" name="email"><br>
+				<label for="">password</label>
+				<input type="password" placeholder="input password" name="pwd"><br>
+				<label for="">confirm</label>
+				<input type="password" placeholder="confirm password" name="pwd_check"><br>
+				<label for="">captcha</label>
+				<input type="text" placeholder="captcha" name="captcha">
+				<img src="../images/x.png" alt="captcha"><br>
+				<label for="">agree</label>
+				<input type="checkbox" placeholder="using_protocol" name="protocol" checked="checked">
+				<a href="../pages/protocol.html">user protocol</a>
+				<hr>
+				<label for="">submit</label>	
+				<input type="submit" placeholder="submit" name="submit" value="submit">
+				<label for="">reset</label>
+				<input type="reset" placeholder="reset" name="reset" value="reset"><br>	
+				<hr>
+			</form>
+			<!-- <button onclick="" name="" form="form_l">submit</button>
+			<button onclick="" name="" form="form_l">reset</button> -->
+		</div>
+	</div>
+	<div class="login_footer">
+		<div class="copyright">2012-2016 &copy;xgqfrms. All Rights Reserved.</div>
+	</div>
 </body>
 </html>
