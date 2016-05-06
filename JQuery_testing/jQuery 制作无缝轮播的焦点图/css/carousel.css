@@ -39,3 +39,51 @@
 .banner .num li.actived{
 	background-color: #0f0;
 }
+.banner .btn{
+	position: absolute;
+	width: 30px;
+	height: 50px;
+	background: rgba(0,0,0,0.5);
+	top: 50%;
+	margin-top: -25px;
+	color: #0f0;
+}
+/*css error*/
+/*
+	<div class="btn btn_l">&lt;</div>
+	<div class="btn btn_r">&gt;</div>
+
+	.banner .btn .btn_l{
+		float: left;
+		margin-left: 30px;
+		color: #f00;
+	}
+	.banner .btn .btn_r{
+		float: right;
+		margin-right: 30px;
+	}
+*/
+/*css right*/
+/*
+	<div class="btn btn_l">&lt;</div>
+	<div class="btn btn_r">&gt;</div>
+	.banner .btn_l{
+		float: left;
+		margin-left: 30px;
+	}
+	.banner .btn_r{
+		float: right;
+		margin-right: 30px;
+	}
+*/
+
+
+.banner .btn .btn_l{
+	float: left;
+	margin-left: 30px;
+	color: #f00;
+}
+.banner .btn .btn_r{
+	float: right;
+	margin-right: 30px;
+}
