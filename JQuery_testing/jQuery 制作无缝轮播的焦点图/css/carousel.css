@@ -10,11 +10,16 @@
 	width: 1021px;
 	height: 385px;
 	position: relative;
+	/*overflow: hidden;*/
 }
 .banner .img{
 	/*width: 1021px; *6 同一行*/
 	width: 6126px;
 	height: 385px;
+	position: absolute;
+	top: 0;
+	/*left: 0; js 实现平移img*/
+	left: -1021px;
 }
 .banner .img li{
 	float: left;
@@ -49,16 +54,18 @@
 	top: 50%;
 	margin-top: -25px;
 	color: #0f0;
+	font-size: 32px;
+	font-family: serif;
+}
+.banner .btn a{
+	text-decoration: none;
+	color: #0f0;
 }
 .banner .btn_l{
-	float: left;
-	left: 30px;
-	color: #f00;
-	padding: 0; 
+	left: 0;
 }
 .banner .btn_r{
-	float: right;
-	right: 30px;
+	right: 0;
 }
 
 
