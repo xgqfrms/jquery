@@ -43,6 +43,8 @@
 	position: absolute;
 	width: 30px;
 	height: 50px;
+	line-height: 50px;/*垂直居中*/
+	text-align: center;/*水平居中*/
 	background: rgba(0,0,0,0.5);
 	top: 50%;
 	margin-top: -25px;
@@ -52,6 +54,7 @@
 	float: left;
 	left: 30px;
 	color: #f00;
+	padding: 0; 
 }
 .banner .btn_r{
 	float: right;
@@ -62,7 +65,7 @@
 
 
 
-/*css error*/
+/*css 级联 error*/
 /*
 	<div class="btn btn_l">&lt;</div>
 	<div class="btn btn_r">&gt;</div>
@@ -77,7 +80,7 @@
 		margin-right: 30px;
 	}
 */
-/*css right*/
+/*css 级联 right*/
 /*
 	<div class="btn btn_l">&lt;</div>
 	<div class="btn btn_r">&gt;</div>
