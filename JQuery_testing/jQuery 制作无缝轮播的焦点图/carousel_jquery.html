@@ -18,12 +18,23 @@
 				<li><a href="#"><img src="images/bg6.jpg" alt="images/bg6.jpg" title="img_6"></a></li>
 			</ul>
 			<ul class="num">
+				<!-- 
+				<pre> old </pre>
 				<li title="img1" class="actived"><a href="#1"></a></li>
-				<li title="img2"><a href="#1"></a></li>
-				<li title="img3"><a href="#1"></a></li>
-				<li title="img4"><a href="#1"></a></li>
-				<li title="img5"><a href="#1"></a></li>
-				<li title="img6"><a href="#1"></a></li>
+				<li title="img2"><a href="#"></a></li>
+				<li title="img3"><a href="#"></a></li>
+				<li title="img4"><a href="#"></a></li>
+				<li title="img5"><a href="#"></a></li>
+				<li title="img6"><a href="#"></a></li>
+				<pre> new </pre>
+				-->
+				<li title="img1"></li>
+				<li title="img2"></li>
+				<li title="img3"></li>
+				<li title="img4"></li>
+				<li title="img5"></li>
+				<li title="img6"></li> 
+				
 			</ul>
 			<div class="btn btn_l"><a href="#">&lt;</a></div>
 			<div class="btn btn_r"><a href="#">&gt;</a></div>
@@ -36,6 +47,11 @@
 			var img_clone = $(".banner .img li").first().clone();
 			$(".banner .img").append(img_clone);
 			var size = $(".banner .img li").size();
+
+			// for(var k = 0; k < size-1; k++ {
+			// 	$(".banner .num").append("<li></li>");
+			// }
+
 			$(".banner .num li").first().addClass("actived");
 
 			/* dot hover */ 

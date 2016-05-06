@@ -44,7 +44,11 @@
 .banner .num li.actived{
 	background-color: #0f0;
 }
+.banner:hover .btn{
+	display: block !important;
+}
 .banner .btn{
+	display: none;
 	position: absolute;
 	width: 30px;
 	height: 50px;
