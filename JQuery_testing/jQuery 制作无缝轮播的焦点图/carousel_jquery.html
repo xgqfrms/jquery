@@ -33,5 +33,25 @@
 			<div class="btn btn_r"><a href="#">&gt;</a></div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(function(){
+			var i = 0;
+			var size = $(".banner .img li").size();
+			$(".banner .btn_l").click(function(){
+				i++;
+				if (i == size) {
+					i = 0;
+				}
+				$(".banner .img").stop().animate({left:-1021*i},500);	
+			});
+			$(".banner .btn_r").click(function(){
+				i--;
+				if (i == -1) {
+					i = size-1;
+				}
+				$(".banner .img").stop().animate({left:-1021*i},500);
+			});
+		});
+	</script>
 </body>
 </html>

@@ -18,8 +18,8 @@
 	height: 385px;
 	position: absolute;
 	top: 0;
-	/*left: 0; js 实现平移img*/
-	left: -1021px;
+	/*left: -1021px; js 实现平移img*/
+	left: 0;
 }
 .banner .img li{
 	float: left;
