@@ -67,11 +67,7 @@
 					i = size-2;
 				}
 				$(".banner .img").stop().animate({left:-1021*i},500);
-				if (i == size-1) {
-					$(".banner .num li").eq(0).addClass("actived").siblings().removeClass("actived");	
-				}else{
-					$(".banner .num li").eq(i).addClass("actived").siblings().removeClass("actived");
-				}
+				$(".banner .num li").eq(i).addClass("actived").siblings().removeClass("actived");
 			});
 			/* auto player*/ 
 			var timer = setInterval(slip_l,2000);
@@ -104,11 +100,7 @@
 					i = size-2;
 				}
 				$(".banner .img").stop().animate({left:-1021*i},500);
-				if (i == size-1) {
-					$(".banner .num li").eq(0).addClass("actived").siblings().removeClass("actived");	
-				}else{
-					$(".banner .num li").eq(i).addClass("actived").siblings().removeClass("actived");
-				}
+				$(".banner .num li").eq(i).addClass("actived").siblings().removeClass("actived");
 			}
 		});
 	</script>
