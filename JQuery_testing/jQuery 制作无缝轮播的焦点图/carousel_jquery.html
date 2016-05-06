@@ -41,8 +41,8 @@
 			
 			$(".banner .num li").hover(function(){
 				var index = $(this).index();
-				$(".banner .img").stop().animate({left:-1021*i},500);
-				$(".banner .num li").eq(i).addClass("actived").siblings().removeClass("actived");
+				$(".banner .img").stop().animate({left:-1021*index},500);
+				$(".banner .num li").eq(index).addClass("actived").siblings().removeClass("actived");
 			});
 
 			$(".banner .btn_l").click(function(){
