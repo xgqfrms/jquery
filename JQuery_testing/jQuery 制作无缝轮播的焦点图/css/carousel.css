@@ -46,7 +46,13 @@
 }
 .banner:hover .btn{
 	display: block !important;
-	animation: ease;
+	background: rgba(0,0,0,1);
+	/*animation: ease;*/
+	transition: all 1s ease 0;
+	-webkit-transition:all 1s ease 0;
+	-moz-transition: all 1s ease 1s;
+	-ms-transition: all 1s ease 1s;
+	-o-transition: all 1s ease 1s;
 }
 .banner .btn{
 	display: none;
