@@ -37,6 +37,14 @@
 			$(".banner .img").append(img_clone);
 			var size = $(".banner .img li").size();
 			// alert(size);
+			$(".banner .num li").first().addClass("actived");
+			
+			$(".banner .num li").hover(function(){
+				var index = $(this).index();
+				$(".banner .img").stop().animate({left:-1021*i},500);
+				$(".banner .num li").eq(i).addClass("actived").siblings().removeClass("actived");
+			});
+
 			$(".banner .btn_l").click(function(){
 				i++;
 				if (i == size) {
@@ -46,6 +54,7 @@
 				$(".banner .img").stop().animate({left:-1021*i},500);
 				$(".banner .num li").eq(i).addClass("actived").siblings().removeClass("actived");	
 			});
+
 			$(".banner .btn_r").click(function(){
 				i--;
 				if (i == -1) {
