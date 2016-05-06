@@ -46,6 +46,7 @@
 }
 .banner:hover .btn{
 	display: block !important;
+	animation: ease;
 }
 .banner .btn{
 	display: none;
