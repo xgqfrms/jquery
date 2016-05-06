@@ -48,6 +48,20 @@
 	margin-top: -25px;
 	color: #0f0;
 }
+.banner .btn_l{
+	float: left;
+	left: 30px;
+	color: #f00;
+}
+.banner .btn_r{
+	float: right;
+	right: 30px;
+}
+
+
+
+
+
 /*css error*/
 /*
 	<div class="btn btn_l">&lt;</div>
@@ -76,14 +90,3 @@
 		margin-right: 30px;
 	}
 */
-
-
-.banner .btn .btn_l{
-	float: left;
-	margin-left: 30px;
-	color: #f00;
-}
-.banner .btn .btn_r{
-	float: right;
-	margin-right: 30px;
-}
