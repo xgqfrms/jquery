@@ -10,11 +10,11 @@
 	width: 1021px;
 	height: 385px;
 	position: relative;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 .banner .img{
-	/*width: 1021px; *6 同一行*/
-	width: 6126px;
+	/*width: 1021px; *6+1 同一行*/
+	width: 7147px;
 	height: 385px;
 	position: absolute;
 	top: 0;

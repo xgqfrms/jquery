@@ -18,17 +18,13 @@
 				<li><a href="#"><img src="images/bg6.jpg" alt="images/bg6.jpg"></a></li>
 			</ul>
 			<ul class="num">
-				<li class="actived"><a href="#1"></a></li>
-				<li><a href="#1"></a></li>
-				<li><a href="#1"></a></li>
-				<li><a href="#1"></a></li>
-				<li><a href="#1"></a></li>
-				<li><a href="#1"></a></li>
+				<li class="actived"><a href="#1" title="$0"></a></li>
+				<li><a href="#1" title="$1"></a></li>
+				<li><a href="#1" title="$2"></a></li>
+				<li><a href="#1" title="$3"></a></li>
+				<li><a href="#1" title="$4"></a></li>
+				<li><a href="#1" title="$5"></a></li>
 			</ul>
-			<!-- <div class="btn">
-				<div class="btn_l">&lt;</div>
-				<div class="btn_r">&gt;</div>
-			</div> -->
 			<div class="btn btn_l"><a href="#">&lt;</a></div>
 			<div class="btn btn_r"><a href="#">&gt;</a></div>
 		</div>
@@ -36,20 +32,28 @@
 	<script type="text/javascript">
 		$(function(){
 			var i = 0;
+			// copy img01
+			var img_clone = $(".banner .img li").first().clone();
+			$(".banner .img").append(img_clone);
 			var size = $(".banner .img li").size();
+			// alert(size);
 			$(".banner .btn_l").click(function(){
 				i++;
 				if (i == size) {
-					i = 0;
+					$(".banner .img").css({left:0});
+					i = 1;
 				}
-				$(".banner .img").stop().animate({left:-1021*i},500);	
+				$(".banner .img").stop().animate({left:-1021*i},500);
+				$(".banner .num li").eq(i).addClass("actived").siblings().removeClass("actived");	
 			});
 			$(".banner .btn_r").click(function(){
 				i--;
 				if (i == -1) {
-					i = size-1;
+					$(".banner .img").css({left:-1021*(size-1)});
+					i = size-2;
 				}
 				$(".banner .img").stop().animate({left:-1021*i},500);
+				$(".banner .num li").eq(i).addClass("actived").siblings().removeClass("actived");
 			});
 		});
 	</script>
