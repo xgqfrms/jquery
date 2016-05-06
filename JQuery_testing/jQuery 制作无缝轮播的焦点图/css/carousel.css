@@ -46,7 +46,7 @@
 }
 .banner:hover .btn{
 	display: block !important;
-	background: rgba(0,0,0,1);
+	background: rgba(255,255,255,1);
 	/*animation: ease;*/
 	transition: all 1s ease 0;
 	-webkit-transition:all 1s ease 0;
